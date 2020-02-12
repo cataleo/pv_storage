@@ -6,6 +6,25 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    = yield
+    -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    #topheader
+      %header.navbar.navbar-fixed-top.navbar-inverse{:style => "background-color: #4285F4;"}
+        .container
+          .nav
+            %ul.nav.navbar-nav
+              %li.nav-item
+                %a.navbar-brand{:href => "https://mecanica.utcluj.ro/", :type => "button", target: '_blank'}
+                  %img.img-responsive.logo{:src => "https://old.utcluj.ro/download/id/SIMBOLURI/01-sigla/JPG/Romana/Varianta%202_negru.jpg", :height => "145", :width => "145"}
+              %li.active
+                %a{:href => "http://localhost:3000/static_pages/about", :type => "button"}
+                  About
+                  -# %span.sr-only (current)
+              %li
+                %a{:href => "http://localhost:3000/static_pages/weatherstation",} Weather Station
+              %li
+                %a{:href => "http://localhost:3000/static_pages/liveproduction"} Live Performance
+              %li
+                %a{:href => "http://localhost:3000/static_pages/history"} History
+              %li= action_name
+    %body
+= yield

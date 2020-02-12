@@ -1,2 +1,42 @@
-%h1 StaticPages#liveproduction
-%p Find me in app/views/static_pages/liveproduction.html.haml
+.header
+  .jumbotron.jumbotron-fluid{:style => "background-color: #4285F4;"}
+    %h1 Monitorizarea live a panourilor fotovoltaice
+.content
+  -# %div{:style => "background-image: url('https://www.sciencealert.com/images/2020-02/processed/012-solar-panel-night_1024.jpg');"}
+  !!!
+  %html
+    %head
+      %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+      %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css", :rel => "stylesheet"}/
+      %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+      %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"}
+    %body
+      %h1
+        %button.Rec
+      .container{:style => "text-align:center"}
+        %button.btn.btn-info{"data-target" => "#demo1", "data-toggle" => "collapse", :type => "button"} 
+          %h4 Temperatura celulei panoului solar
+        #demo1.collapse
+          %h2
+            41 °C
+        %button.btn.btn-info{"data-target" => "#demo2", "data-toggle" => "collapse", :type => "button"} 
+          %h4 Intensitatea luminii
+        #demo2.collapse
+          %h2 
+            128 kLux
+        %button.btn.btn-info{"data-target" => "#demo3", "data-toggle" => "collapse", :type => "button"} 
+          %h4 Puterea generată
+        #demo3.collapse
+          %h2
+            425 W
+        %button.btn.btn-info{"data-target" => "#demo4", "data-toggle" => "collapse", :type => "button"} 
+          %h4 Tensiunea de funcționare
+        #demo4.collapse
+          %h2
+            36 V
+        %button.btn.btn-info{"data-target" => "#demo5", "data-toggle" => "collapse", :type => "button"} 
+          %h4 Randamentul
+        #demo5.collapse
+          %h2
+            1.10 kWh

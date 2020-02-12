@@ -1,2 +1,49 @@
-%h1 StaticPages#weatherstation
-%p Find me in app/views/static_pages/weatherstation.html.haml
+.header
+  %h1
+    = "Date climatice"
+  .text-center
+    %a.btn.btn-default.btn-logo.active{:href => "https://www.google.ro/maps/place/Cluj-Napoca/@46.7833002,23.4764293,11z/data=!3m1!4b1!4m5!3m4!1s0x47490c1f916c0b8b:0xbbc601c331f148b!8m2!3d46.7712101!4d23.6236353", target: '_blank', :type => "button", :style => "text-align:center"}
+      %span.glyphicon.glyphicon-globe{"aria-hidden" => "true"}
+        Cluj-Napoca
+.content
+  .grid-container
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/temperature-indicating-instrument-snow_23-2147963627.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Temperatură
+        %p.card-text 4°C
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/water-drops-glass_1323-153.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Umiditate
+        %p.card-text 53%
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/side-view-carefree-man-enjoying-freedom-with-arms-outstretched_23-2148182869.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Presiune atmosferică
+        %p.card-text 1012 hPa
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/california-desert-wind-turbines_1426-506.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Viteza vântului
+        %p.card-text 12 km/h
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/fantastic-cloudscape_1232-490.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Grad de înnorare
+        %p.card-text Cer noros
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/red-neon-lines-colorful-laser-light-dark-background_23-2147881223.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Indexul de raze ultraviolete
+        %p.card-text 2
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/3d-hazy-mountain-range-against-sunset-sky_1048-10361.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Răsăritul soarelui
+        %p.card-text 07:21
+    .card{:style => "text-align:center"}
+      %img.card-img-top{:alt => "...", :src => "https://image.freepik.com/free-photo/cloudy-sky-sunset-sea_138670-215.jpg", :height => "100", :width => "100"}/
+      .card-body
+        %h5.card-title Apusul soarelui
+        %p.card-text 17:58

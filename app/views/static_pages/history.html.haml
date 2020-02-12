@@ -1,2 +1,83 @@
-%h1 StaticPages#history
-%p Find me in app/views/static_pages/history.html.haml
+.header
+  %h1{:style => "color: #4285F4;"} Istoricul datelor de performanță
+.content
+  %table.table
+    %thead.thead-dark
+      %tr
+        %th{:scope => "col", :style => "text-align:center"} Ziua
+        %th{:scope => "col", :style => "text-align:center"} Puterea maximă generată [W]
+        %th{:scope => "col", :style => "text-align:center"} Randamentul [kWh]
+        %th{:scope => "col", :style => "text-align:center"} Iradierea solară [W/m2]
+        %th{:scope => "col", :style => "text-align:center"} Temperatura medie a panoului solar [°C]
+    %tbody
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 1
+        %td{:style => "text-align:center"} 447
+        %td{:style => "text-align:center"} 1.10
+        %td{:style => "text-align:center"} 975
+        %td{:style => "text-align:center"} 42
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 2
+        %td{:style => "text-align:center"} 440
+        %td{:style => "text-align:center"} 0.79
+        %td{:style => "text-align:center"} 1013
+        %td{:style => "text-align:center"} 41
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 3
+        %td{:style => "text-align:center"} 433
+        %td{:style => "text-align:center"} 1.28
+        %td{:style => "text-align:center"} 891
+        %td{:style => "text-align:center"} 36
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 4
+        %td{:style => "text-align:center"} 443
+        %td{:style => "text-align:center"} 1.16
+        %td{:style => "text-align:center"} 929
+        %td{:style => "text-align:center"} 39
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 5
+        %td{:style => "text-align:center"} 445 
+        %td{:style => "text-align:center"} 0.99
+        %td{:style => "text-align:center"} 983
+        %td{:style => "text-align:center"} 40
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 6
+        %td{:style => "text-align:center"} 447
+        %td{:style => "text-align:center"} 0.83
+        %td{:style => "text-align:center"} 1003
+        %td{:style => "text-align:center"} 42
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 7
+        %td{:style => "text-align:center"} 434
+        %td{:style => "text-align:center"} 1.11
+        %td{:style => "text-align:center"} 981
+        %td{:style => "text-align:center"} 37
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 8
+        %td{:style => "text-align:center"} 442
+        %td{:style => "text-align:center"} 1.15
+        %td{:style => "text-align:center"} 956
+        %td{:style => "text-align:center"} 38
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 9
+        %td{:style => "text-align:center"} 436
+        %td{:style => "text-align:center"} 0.72
+        %td{:style => "text-align:center"} 1067
+        %td{:style => "text-align:center"} 43
+      %tr
+        %th{:scope => "row", :style => "text-align:center"} 10
+        %td{:style => "text-align:center"} 440
+        %td{:style => "text-align:center"} 1.06
+        %td{:style => "text-align:center"} 982
+        %td{:style => "text-align:center"} 37
+  .row
+    .col-sm-6{:style => "text-align:center"}
+      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_CmG8jK8pEeQPLVgYECpmMZcasxK6jCLKNT9mLNEzUOAatgydHew_oclTyOs_G5D45BMC92B_-JdO/pubchart?oid=1425424013&amp;format=interactive"></iframe>
+    .col-sm-6{:style => "text-align:center"}
+      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_CmG8jK8pEeQPLVgYECpmMZcasxK6jCLKNT9mLNEzUOAatgydHew_oclTyOs_G5D45BMC92B_-JdO/pubchart?oid=937377840&amp;format=interactive"></iframe>
+  .row{:style => "text-align:center"}
+    .li
+      = link_to 'https://docs.google.com/spreadsheets/d/1z4XXGYRdQRoxiW0p7jh6FVlOAXWMa2OS07QoqxMDcA0/edit#gid=0', target: '_blank', class: 'btn btn-primary' do
+        = "Take me to Performance Statistics Google Sheets"
+        %i.fa.fa-chevron-right
+
