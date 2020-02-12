@@ -8,3 +8,5 @@ environment.plugins.append(
     })
 );
 module.exports = environment;
+var webpack = require('webpack');
+
