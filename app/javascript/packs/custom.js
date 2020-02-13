@@ -19,7 +19,7 @@ $('#recButton').click(function () {
     }
 });
 
-// var btnContainer = document.getElementById("topheader");
+// var btnContainer = document.getElementById("myDIV");
 
 // var btns = btnContainer.getElementsByClassName("btn");
 

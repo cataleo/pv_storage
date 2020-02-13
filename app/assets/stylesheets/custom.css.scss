@@ -37,6 +37,10 @@ li {
 font-size: 20px; letter-spacing: -1px; margin-left: 40px; text-align: center;
 }
 
+.text-center {
+  margin-bottom: 20px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -93,6 +97,19 @@ h1 > button {
 	margin: 18px;
 	outline: none;
 }
+
+// .btn {
+//   border: none;
+//   outline: none;
+//   padding: 10px 16px;
+//   background-color: #f1f1f1;
+//   cursor: pointer;
+// }
+
+// .active, .btn:hover {
+//   background-color: #666;
+//   color: white;
+// }
 
 @keyframes pulse{
 	0%{
