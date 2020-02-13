@@ -15,16 +15,13 @@
               %li.nav-item
                 %a.navbar-brand{:href => "https://mecanica.utcluj.ro/", :type => "button", target: '_blank'}
                   %img.img-responsive.logo{:src => "https://old.utcluj.ro/download/id/SIMBOLURI/01-sigla/JPG/Romana/Varianta%202_negru.jpg", :height => "145", :width => "145"}
-              %li.active
-                %a{:href => "https://pv-performance.herokuapp.com/static_pages/about", :type => "button"}
-                  About
-                  -# %span.sr-only (current)
-              %li
-                %a{:href => "https://pv-performance.herokuapp.com/static_pages/weatherstation",} Weather Station
-              %li
-                %a{:href => "https://pv-performance.herokuapp.com/static_pages/liveproduction"} Live Performance
-              %li
-                %a{:href => "https://pv-performance.herokuapp.com/static_pages/history"} History
-              %li= action_name
+              %li{class: action_name == 'about' ? 'active' : ''}
+                = link_to "About", static_pages_about_path
+              %li{class: action_name == 'weatherstation' ? 'active' : ''}
+                = link_to "Weather Station", static_pages_weatherstation_path
+              %li{class: action_name == 'liveproduction' ? 'active' : ''}
+                = link_to 'Live Performance', static_pages_liveproduction_path
+              %li{class: action_name == 'history' ? 'active' : ''}
+                = link_to 'History', static_pages_history_path
     %body
 = yield
